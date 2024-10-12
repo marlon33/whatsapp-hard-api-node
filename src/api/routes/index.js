@@ -6,7 +6,11 @@ const miscRoutes = require('./misc.route');
 const groupRoutes = require('./group.route');
 //const managerRoutes = require('./manager.route');
 
-router.get('/status', (req, res) => res.send('OK'));
+router.get('/status', (req, res) => res.send({
+    "status":"Success",
+    "version":"v1.6.2",
+    "time": new Date()
+}));
 router.use('/instance', instanceRoutes);
 router.use('/message', messageRoutes);
 router.use('/group', groupRoutes);
