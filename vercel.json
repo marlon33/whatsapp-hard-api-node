@@ -15,7 +15,7 @@
   
   "functions": {
     "src/.js": {
-      "maxDuration": 15 // This function can run for a maximum of 15 seconds
+      "maxDuration": 15
     },
   }
 }
