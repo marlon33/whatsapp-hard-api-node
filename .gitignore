@@ -10,3 +10,7 @@ sessiondata
 # IDEs
 .vscode/settings.json
 .idea
+
+#DB
+
+db/*
