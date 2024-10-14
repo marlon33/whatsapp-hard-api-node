@@ -15,7 +15,7 @@ router.get('/', (req, res) => res.send({
             "api":"whatsapp api",
             "version": "v1.6.2"
         }
-    ]
+    ],
     "time": new Date()
 }));
 
