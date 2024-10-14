@@ -6,6 +6,19 @@ const miscRoutes = require('./misc.route');
 const groupRoutes = require('./group.route');
 //const managerRoutes = require('./manager.route');
 
+
+router.get('/', (req, res) => res.send({
+    "status":"success",
+    "error":false,
+    "data":[
+        {
+            "api":"whatsapp api",
+            "version": "v1.6.2"
+        }
+    ]
+    "time": new Date()
+}));
+
 router.get('/status', (req, res) => res.send({
     "status":"Success",
     "version":"v1.6.2",
